@@ -5,13 +5,26 @@
   background-color: rgba(30,30,30,0.7);
   overflow: auto;
   text-align: center;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 #top-banner-img{
   float:right;
 }
 
+#images__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+img {
+  height: 200px;
+  width: 280px;
+  margin-bottom: 20px;
+}
 
 #menu {
   width: 260px;
@@ -78,4 +91,9 @@
   margin-top: 40px;
 }
 
-
+/* Desktop */
+@media screen and (min-width: 480px) {
+  #images__container {
+    justify-content: space-evenly;
+  }
+}
